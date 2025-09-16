@@ -1,52 +1,51 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:title",
- "creation": "2025-09-12 15:46:36.505878",
+ "autoname": " full_name",
+ "creation": "2025-09-16 11:17:32.785725",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "title",
-  "status",
-  "column_break_avci",
-  "autor",
-  "isbn"
+  "full_name",
+  "gmail",
+  "column_break_otpn",
+  "library_card_number",
+  "phone_number"
  ],
  "fields": [
   {
-   "fieldname": "title",
+   "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Title",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "gmail",
+   "fieldtype": "Data",
+   "label": "Gmail"
+  },
+  {
+   "fieldname": "library_card_number",
+   "fieldtype": "Data",
+   "label": "Library Card Number",
    "unique": 1
   },
   {
-   "fieldname": "isbn",
-   "fieldtype": "Data",
-   "label": "Isbn"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "\nAvailable\nIssued"
-  },
-  {
-   "fieldname": "column_break_avci",
+   "fieldname": "column_break_otpn",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "autor",
+   "fieldname": "phone_number",
    "fieldtype": "Data",
-   "label": "Autor"
+   "label": "Phone Number"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-16 12:17:37.373296",
+ "modified": "2025-09-16 11:21:51.766635",
  "modified_by": "Administrator",
  "module": "HAFSA 15",
- "name": "Library Book",
+ "name": "Library Member",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
