@@ -15,7 +15,7 @@ class LibraryBook(Document):
     def validate(self):
         if not self.title:
             frappe.throw("Title is required")
-        if not self.autor:
+        if not self.author:
             frappe.throw("Author is required")
         if not self.isbn:
             frappe.throw("ISBN is required")

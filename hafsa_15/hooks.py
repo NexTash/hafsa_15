@@ -137,13 +137,13 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Library Book": {
+		"after_insert": "hafsa_15.events.notify_new_book",
+		# "on_cancel": "method",
+		# "on_trash": "method"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
