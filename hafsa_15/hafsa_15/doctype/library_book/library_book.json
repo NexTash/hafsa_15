@@ -10,7 +10,8 @@
   "status",
   "column_break_avci",
   "author",
-  "isbn"
+  "isbn",
+  "amended_from"
  ],
  "fields": [
   {
@@ -28,7 +29,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "\nAvailable\nIssued"
+   "options": "Available\nIssued"
   },
   {
    "fieldname": "column_break_avci",
@@ -38,12 +39,23 @@
    "fieldname": "author",
    "fieldtype": "Data",
    "label": "Author"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Book",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-09-17 17:25:10.949435",
+ "modified": "2025-10-06 15:17:18.910677",
  "modified_by": "Administrator",
  "module": "HAFSA 15",
  "name": "Library Book",
@@ -60,6 +72,19 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

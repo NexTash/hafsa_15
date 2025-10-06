@@ -26,3 +26,7 @@ def issue_book(book, member):
         "issued_id": issued_book.name,
         "book_status": book_doc.status
     }
+
+@frappe.whitelist()
+def get_books_by_author(author):
+    return frappe.get_all("Library Book", filters={"author": author}, fields=["title", "isbn"])
